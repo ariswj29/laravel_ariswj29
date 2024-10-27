@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->string('alamat');
-            $table->string('no_telepon');
+            $table->string('telepon');
             $table->foreignId('rumah_sakit_id')->constrained()->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
